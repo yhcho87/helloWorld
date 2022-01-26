@@ -17,7 +17,7 @@ steps:
     timeoutInSeconds: 400
     name: "setVersion"
     command: |
-      version=${version}
+      version=`echo ${version}`
       echo $version
 outputArtifacts:
   - name: OUTPUT
