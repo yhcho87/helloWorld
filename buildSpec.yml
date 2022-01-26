@@ -14,4 +14,4 @@ steps:
 outputArtifacts:
   - name: OUTPUT
     type: BINARY
-    location: target/*.jar
+    location: target/helloWorld-0.0.1.jar
