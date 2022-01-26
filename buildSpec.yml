@@ -14,11 +14,11 @@ steps:
     command: |
       mvn clean install
   - type: Command
-      timeoutInSeconds: 400
-      name: "Dockerizer"
-      command: |
-        version=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
-        echo $version
+    timeoutInSeconds: 400
+    name: "setVersion"
+    command: |
+      version=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
+      echo $version
 outputArtifacts:
   - name: OUTPUT
     type: BINARY
