@@ -4,8 +4,8 @@ timeoutInSeconds: 6000
 runAs: root
 shell: bash
 env:
-  variables:
-    version: "0.1"
+  variables: 
+    "version" : "0.1"
   exportedVariables:
     - version
     
