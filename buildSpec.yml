@@ -17,7 +17,7 @@ steps:
     timeoutInSeconds: 400
     name: "setVersion"
     command: |
-      version=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
+      version=${version}
       echo $version
 outputArtifacts:
   - name: OUTPUT
