@@ -5,7 +5,7 @@ runAs: root
 shell: bash
 env:
   variables: 
-    "version" : "0.2"
+    "version" : "0.22"
   exportedVariables:
     - version
     
